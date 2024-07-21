@@ -19,8 +19,8 @@ dp = Dispatcher()
 # Handler for /start command.
 @dp.message(Command('start'))
 async def cmd_start(message: types.Message):
-    await message.answer('hit_bot is work')
-
+    answer = 'Для работы бота добавте его в группу как администратора с правами на удаления сообщений.\nПользуйтесь командой /hit'
+    await message.answer(answer)
 
 # Handler for /hit command.
 @dp.message(Command('hit'))
